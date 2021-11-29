@@ -50,7 +50,7 @@ def nice_mean(nice,mean,name):
     stop = True
     while stop:
         show_score(nice,mean,name)
-        pick = input("\nA stranger approaches you for a \nconversation. Will you be nice \nor mean? (N/M) \n>>>: ").upper()
+        pick = input("\nA stranger approaches you for a \nconversation. Will you be nice \nor mean? (N/M) \n>>>: ").lower()
         if pick == "n":
             print("\nThe stranger walks away smiling...")
             nice = (nice + 1)
