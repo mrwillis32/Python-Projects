@@ -3,15 +3,40 @@
 
 class Player:
     #Define the attributes of the class
-    name = "No name provided"
-    username = ""
-    password = "abcdeg45"
+    name = "Jimmy Smith"
+    username = "jsmith22"
+    password = "abc123"
     account = 0
+
+
+
+        
+    def getLoginInfo(self):
+        entry_username = input("Enter you username: ")
+        entry_account = input("Enter your account number: ")
+        entry_pin = input("Enter your pin: ")
+        if (entry_username == self.username and entry_pin == self.pin_number):
+            print("Welcome back, {}!".format(entry_username))
+        else:
+            print("The pin or username is incorrect")
+    #The following code invokes the methods inside each class for Player and Coach
+
 
 class College(Player):
     player_rank = 5
     player_injuries = 'ACL'
     pin_number = '1234'
+
+        
+    def getLoginInfo(self):
+        entry_username = input("Enter you username: ")
+        entry_account = input("Enter your account number: ")
+        entry_pin = input("Enter your pin: ")
+        if (entry_username == self.username and entry_pin == self.pin_number):
+            print("Welcome back, {}!".format(entry_username))
+        else:
+            print("The pin or username is incorrect")
+    #The following code invokes the methods inside each class for Player and Coach
 
 class Coach(Player):
     coach_postion = 'Linebackers'
@@ -27,15 +52,10 @@ class Coach(Player):
         else:
             print("Not authorized, username needed.")
 
-def getLoginInfo(self):
-    entry_username = input("Enter you username: ")
-    entry_account = input("Enter your account number: ")
-    entry_pin = input("Enter your pin: ")
-    if (entry_username == self.username and entry_pin == self.pin_number):
-        print("Welcome back, {}!".format(entry_username))
-    else:
-        print("The pin or username is incorrect")
-#The following code invokes the methods inside each class for Player and Coach
+ 
+    
+    
+  
 
 player = Player()
 player.getLoginInfo()
@@ -47,6 +67,3 @@ gm.getLoginInfo()
     
     
     
-    
-    
-  
