@@ -7,6 +7,7 @@ class Player:
     username = "jsmith22"
     password = "abc123"
     account = 0
+    pin_number = 2234
 
 
 
@@ -25,7 +26,7 @@ class Player:
 class College(Player):
     player_rank = 5
     player_injuries = 'ACL'
-    pin_number = '1234'
+    pin_number = 1234
 
         
     def getLoginInfo(self):
@@ -41,7 +42,7 @@ class College(Player):
 class Coach(Player):
     coach_postion = 'Linebackers'
     coach_years = 2
-    pin_number = '5678'
+    pin_number = 5678
 
     #Define the methods of the class
     def getLoginInfo(self):
