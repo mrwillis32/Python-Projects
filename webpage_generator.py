@@ -36,6 +36,7 @@ print(file.read())
 
 # Import Module
 from tkinter import *
+import webbrowser
 
  
 # create root window
@@ -58,6 +59,18 @@ txt.grid(column =1, row =0)
 # function to display user text when
 # button is clicked
 def clicked():
+    #gets the text in the "txt" Entry widgets
+    #and saves it to the "userText" variable
+    userText = txt.get()
+    #variable for holding the HTML code with
+    #the user's text in the middle of it
+    htmlCode = "<html><body>" + userText + "</body></html>"
+    #opens the HTML file in write mode
+    f = open('webpage_generator.html', 'w')
+    #writes the HTML code the html FILE
+    f.write(htmlCode)
+    #opens the HTML file in the browser
+    webbrowser.open('qebpage_generator.html')
  
     res = "You wrote " + txt.get()
     lbl.configure(text = res)
