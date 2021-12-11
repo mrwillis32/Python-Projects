@@ -190,7 +190,7 @@ for files in os.listdir('/Users/mr.willis/Desktop/Daily Files'):
 	
 	# Get all the details of the file creation
 	# and modification
-	time_format = time.gmtime(os.path.getmtime(files))
+	time_format = time.getmtime(os.path.getmtime(files))
 	
 	# Now, extract only the Year, Month, and Day
 	datetime_object = datetime.datetime.strptime(str(time_format.tm_mon), "%m")
